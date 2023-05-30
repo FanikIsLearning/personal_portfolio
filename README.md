@@ -19,4 +19,5 @@ https://fontawesome.com/
 # personal_portfolio
 
 domain:
-`personalportfoliohoi.azurewebsites.net`
+`https://hoiportfolio.azurewebsites.net`
+`https://hoiportfolio.onrender.com/`
