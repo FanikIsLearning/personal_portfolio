@@ -1,22 +1,14 @@
-<!DOCTYPE html>
-<html lang="en">
+<%- include('partials/header.ejs') %>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>
-        <%= title %>
-    </title>
-</head>
+    <%- include('partials/main_nav.ejs') %>
+        <div class="container">
+            <h1>Welcome to
+                <%=title %>
+            </h1>
 
-<body>
-    <img src="img/pot.jpg" alt="pot">
-    <h1>
+            <p>Hi my name is HOI KIT FAN. This is my assignment1 of COMP229. </p>
+        </div>
 
-        Welcome to <%=title %>
-    </h1>
-    <p>POG is an organization created to serve you</p>
-</body>
+        <%- include('partials/bottom_nav.ejs') %>
 
-</html>
+            <%- include('partials/footer.ejs') %>

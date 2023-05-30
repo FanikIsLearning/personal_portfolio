@@ -15,4 +15,5 @@ Assignment
 - missing deployment: netlify, render, azure, aws
 
 https://fontawesome.com/
+
 # personal_portfolio

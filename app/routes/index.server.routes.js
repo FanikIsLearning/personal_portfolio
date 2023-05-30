@@ -1,3 +1,8 @@
+/*  File Name: app.css
+    Student Name: HOI KIT FAN
+    Student ID: 301249275
+    Date: 05/29/2023
+*/
 var express = require("express");
 var router = express.Router();
 
@@ -7,7 +12,7 @@ router.get("/", function (req, res, next) {
 });
 
 router.get("/about", function (req, res, next) {
-  res.render("index", { title: "About" });
+  res.render("about", { title: "About Me" });
 });
 
 router.get("/contact", function (req, res, next) {
