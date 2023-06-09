@@ -4,7 +4,222 @@
     Date: 05/29/2023
 */
 
+.navbar {
+  background-color: #333336;
+}
 
-.content{
-    margin-top: 40px!important;
+.fa-github,
+.fa-facebook,
+.fa-facebook-messenger,
+.fa-youtube,
+.fa-envelope,
+.fa-whatsapp,
+.fa-java,
+.fa-c,
+.fa-square-js,
+.fa-html5,
+.fa-css3-alt,
+.fa-palette,
+.fa-cube,
+.fa-vr-cardboard,
+.fa-weebly,
+.fa-vuejs,
+.fa-ubuntu,
+.fa-git {
+  font-size: xx-large;
+}
+
+.content-primary {
+  background-color: #fbfbfd;
+}
+
+.nav-item {
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.headline {
+  font-size: 48px;
+  line-height: 1.0834933333;
+  font-weight: 600;
+  letter-spacing: -0.003em;
+  font-family: SF Pro Display, SF Pro Icons, Helvetica Neue, Helvetica, Arial,
+    sans-serif;
+  color: #1d1d1f;
+  text-align: center;
+}
+
+.subhead {
+  font-size: 21px;
+  line-height: 1.1904761905;
+  font-weight: 600;
+  letter-spacing: 0.011em;
+  font-family: SF Pro Display, SF Pro Icons, Helvetica Neue, Helvetica, Arial,
+    sans-serif;
+  text-align: center;
+  color: #86868b;
+  margin-top: 20px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.head-desc {
+  font-size: 17px;
+  line-height: 1;
+  font-weight: 600;
+  letter-spacing: -0.022em;
+  font-family: SF Pro Text, SF Pro Icons, Helvetica Neue, Helvetica, Arial,
+    sans-serif;
+
+  margin-top: 35px;
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.overview-comp229 {
+  margin-top: 90px;
+}
+
+.button-container {
+  margin-top: 30px;
+}
+
+.button-elevated {
+  padding: 10px 20px;
+  font-size: 17px;
+  line-height: 1.1764805882;
+  font-weight: 400;
+  letter-spacing: -0.022em;
+  font-family: SF Pro Text, SF Pro Icons, Helvetica Neue, Helvetica, Arial,
+    sans-serif;
+  min-width: 28px;
+  --sk-button-margin-horizontal: 18px;
+  --sk-button-margin-vertical: 18px;
+  color: #1d1d1f;
+  text-decoration: none;
+}
+
+.button-neutral {
+  background: #1d1d1f;
+}
+
+.button-white {
+  margin-left: 10px;
+  background-color: initial;
+  color: #1d1d1f;
+  border: 2px solid #1d1d1f;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  cursor: pointer;
+  display: inline-block;
+  text-align: center;
+  white-space: nowrap;
+  border-radius: 980px;
+  padding: 10px 20px 10px 20px;
+}
+
+.button-black {
+  margin-left: 10px;
+  background-color: black;
+  color: white;
+  border: 2px solid #1d1d1f;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  cursor: pointer;
+  display: inline-block;
+  text-align: center;
+  white-space: nowrap;
+  border-radius: 980px;
+  padding: 10px 20px 10px 20px;
+}
+
+.comp229 {
+  width: 984px;
+  height: 184px;
+  border-radius: 5px;
+}
+
+.index-list {
+  width: 984px;
+  text-align: center;
+}
+
+.b-card {
+  width: 60%;
+  border-radius: 5px;
+}
+
+.container {
+  padding: 75px 0 75px 0;
+}
+
+/*about*/
+.myImage {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  padding: 2px;
+}
+
+/*projects*/
+.thumbnail-cards {
+  display: block;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.font-white {
+  fill: #fff;
+}
+
+.font-black {
+  fill: #000;
+}
+
+.font-grey {
+  fill: #5f5f66;
+}
+
+/*services*/
+.padded-icon {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+/*hover*/
+.button-white:hover {
+  background-color: #1d1d1f;
+  color: #fff;
+}
+
+.button-black:hover {
+  background-color: white;
+  color: black;
+}
+
+/*projects*/
+.thumbnail-cards:hover .card {
+  transform: translateY(-4px);
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 5px 15px 0px !important;
+}
+@media only screen and (max-width: 1068px) {
+  .comp229 {
+    width: 695px;
+    height: 133px;
+    border-radius: 5px;
+  }
+
+  .index-list {
+    width: 695px;
+  }
+}
+
+@media only screen and (max-width: 734px) {
+  .comp229 {
+    max-width: 100%;
+    border-radius: 5px;
+  }
+
+  .index-list {
+    max-width: 100%;
+  }
 }

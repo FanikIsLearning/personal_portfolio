@@ -36,5 +36,5 @@ Available to deploy following options:
 
 ## Domain
 
-- Azure: [https://hoiportfolio.azurewebsites.net](https://hoiportfolio.azurewebsites.net)
+- Azure: [https://hoiportfolio.azurewebsites.net](https://hoiportfolio.azurewebsites.net) - this worked, but need longer preparation time.
 - Render: [https://hoiportfolio.onrender.com](https://hoiportfolio.onrender.com)

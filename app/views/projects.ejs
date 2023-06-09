@@ -1,0 +1,74 @@
+<%- include('partials/header.ejs') %> <%- include('partials/main_nav.ejs') %>
+<div class="container">
+  <div class="d-flex justify-content-center">
+    <h3 class="headline">Welcome to <%=title %></h3>
+  </div>
+  <p class="subhead">
+    "Hello, my name is Hoi Kit Fan. I am currently developing an assignment for
+    COMP229, which involves the creation and online deployment of a personal
+    portfolio."
+  </p>
+  <p class="head-desc">COMP229 - 004 - Professor Blessing Ajiboye</p>
+  <div class="album py-5 bg-body-tertiary">
+    <div class="container">
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+        <%# card component%> <% projects.forEach((project, index)=> { %>
+        <div class="col">
+          <a
+            class="thumbnail-cards"
+            href="<%= project.href %>"
+            target="_blank"
+            alt="<%= project.alt %>"
+          >
+            <div
+              class="card shadow-sm text-bg-<%= colors[index % colors.length] %> mb-3"
+            >
+              <svg
+                class="bd-placeholder-img card-img-top"
+                width="100%"
+                height="225"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                role="img"
+                aria-label="Placeholder: Thumbnail"
+                preserveAspectRatio="xMidYMid slice"
+                focusable="false"
+              >
+                <title>Placeholder</title>
+                <image
+                  xlink:href="<%= project.imgSrc %>"
+                  x="0"
+                  y="0"
+                  height="100%"
+                  width="100%"
+                  preserveAspectRatio="none"
+                />
+                <text
+                  x="50%"
+                  y="50%"
+                  fill="#eceeef"
+                  dy=".3em"
+                  text-anchor="middle"
+                  dominant-baseline="middle"
+                  font-size="24"
+                  font-weight="bold"
+                  font-family="SF Pro Display, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif"
+                  class="<%= project.fontColor %>"
+                >
+                  <%= project.title %>
+                </text>
+              </svg>
+              <div class="card-body">
+                <p class="card-text"><%= project.text %></p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <% }); %>
+      </div>
+    </div>
+  </div>
+
+  <%- include('partials/bottom_nav.ejs') %> <%- include('partials/footer.ejs')
+  %>
+</div>

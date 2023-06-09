@@ -1,0 +1,74 @@
+[
+    {
+      "href": "http://studentweb.cencol.ca/hfan15/index.html",
+      "alt": "COMP213-project1",
+      "imgSrc": "/img/projects/p1.png",
+      "title": "COMP213 - First project",
+      "text": "I created a basic website using only HTML and CSS, treating it as my menu in my first semester.",
+      "fontColor": "font-white"
+    },
+    {
+        "href": "http://studentweb.cencol.ca/hfan15/Assign2/assignment2.html",
+        "alt": "COMP213-project2",
+        "imgSrc": "/img/projects/p2.png",
+        "title": "COMP213 - Second project",
+        "text": "The Protected Area Issues website utilizes list group functions, built exclusively with HTML and CSS.",
+        "fontColor": "font-white"
+    },
+    {
+        "href": "http://studentweb.cencol.ca/hfan15/Assign3/assignment3.html",
+        "alt": "COMP213-project3",
+        "imgSrc": "/img/projects/p3.png",
+        "title": "COMP213 - Third project",
+        "text": "On this website, I used the Model 3 as an example to demonstrate the product's specifications.",
+        "fontColor": "font-white"
+    },
+    {
+        "href": "http://studentweb.cencol.ca/hfan15/Assign3/assignment3.html",
+        "alt": "COMP213-project4",
+        "imgSrc": "/img/projects/p4.png",
+        "title": "COMP213 - Fourth project",
+        "text": "A static form, meeting Centennial College's requirements, is utilized to post data to the professor's API.",
+        "fontColor": "font-grey"
+    },
+    {
+        "href": "http://studentweb.cencol.ca/hfan15/Project/project.html",
+        "alt": "COMP213-final-project",
+        "imgSrc": "/img/projects/p5.png",
+        "title": "COMP213 - Final project",
+        "text": "In my COMP213 final project, I made a fake Realtor, behaving as a real estate platform. Yet, this website is built using HTML and CSS.",
+        "fontColor": "font-grey"
+    },
+    {
+        "href": "http://studentweb.cencol.ca/hfan15/COMP125/ASSIGN1/assignment1.html",
+        "alt": "COMP125-project1",
+        "imgSrc": "/img/projects/p6.png",
+        "title": "COMP125 - First project",
+        "text": "In my second semester, I started using JS with HTML and CSS. In one project, we created a table that loops based on two inputs: columns and rows.",
+        "fontColor": "font-black"
+    },
+    {
+        "href": "http://studentweb.cencol.ca/hfan15/COMP125/ASSIGN2/js05_txt.html",
+        "alt": "COMP125-project2",
+        "imgSrc": "/img/projects/p7.png",
+        "title": "COMP125 - Second project",
+        "text": "The assignment2 involved creating a carousel gallery. Clicking a picture opens a tab with an 'add to favourites' function. Selected favourites are temporarily stored in a special gallery frame.",
+        "fontColor": "font-white"
+    },
+    {
+        "href": "http://studentweb.cencol.ca/hfan15/COMP125/ASSIGN3/assignment3.html",
+        "alt": "COMP125-project3",
+        "imgSrc": "/img/projects/p8.png",
+        "title": "COMP125 - Third project",
+        "text": "In this compact bug-counting game, bugs appear randomly in a leafy container. Each click on a bug boosts your score, with bug speed increasing per point.",
+        "fontColor": "font-white"
+    },
+    {
+        "href": "http://studentweb.cencol.ca/hfan15/COMP125/ASSIGN4/index.html",
+        "alt": "COMP125-final-project",
+        "imgSrc": "/img/projects/p9.png",
+        "title": "COMP125 - Final project",
+        "text": "The final assignment improved on the second one, implementing JSON within a .txt file to store data. A JavaScript script retrieves this data, populating the gallery and displaying each image's duration.",
+        "fontColor": "font-black"
+    }
+  ]

@@ -1,33 +1,152 @@
-<%- include('partials/header.ejs') %>
+<%- include('partials/header.ejs') %> <%- include('partials/main_nav.ejs') %>
+<div style="width: 100%; height: 550px">
+  <a-scene embedded device-orientation-permission-ui="enabled: false">
+    <a-camera position="0 0 3" user-height="0"></a-camera>
+    <a-entity
+      geometry="primitive: sphere; radius: 1.5; segmentsHeight: 53"
+      material="src: /img/earth_texture.jpg"
+      animation="property: rotation; to: 0 360 0; loop: true; dur: 86400; easing: linear"
+    >
+    </a-entity>
+    <a-sky
+      segments-height="100"
+      segments-width="100"
+      src="/img/starNight.jpg"
+      rotation="0 -30 0"
+    ></a-sky>
+  </a-scene>
+</div>
 
-    <%- include('partials/main_nav.ejs') %>
-        <div class="container">
-            <div class="content">
-                <h1>Welcome to
-                    <%=title %>
-                </h1>
+<div class="content-primary">
+  <div class="container">
+    <div class="content" role="alert">
+      <div class="d-flex justify-content-center">
+        <h3 class="headline">Welcome to <%=title %></h3>
+      </div>
 
-                <p>Hi my name is HOI KIT FAN. This is my assignment1 of COMP229. I have to complete the following tasks
-                    to
-                    complete the assignment</p>
-                <ol>
-                    <li>Appropriate content for a Personal Portfolio</li>
-                    <li>Portfolio site will use ExpressJS and NodeJS</li>
-                    <li>Site files will be migrated to work within the public, routes and views folders</li>
-                    <li>Internal Documentation</li>
-                    <li>Share my files on Github</li>
-                    <li>Create short video on Youtube</li>
-                </ol>
-                <p>SUBMITTING MY WORK</p>
-                <ol type="A">
-                    <li>A zip archive of your website’s Project files</li>
-                    <li>A link to GitHub (preferable).</li>
-                    <li>A link to your live portfolio site hosted with a Cloud provider</li>
-                </ol>
-            </div>
-        </div>
+      <p class="subhead">
+        "Hello, my name is Hoi Kit Fan. I am currently developing an assignment
+        for COMP229, which involves the creation and online deployment of a
+        personal portfolio."
+      </p>
 
+      <p class="head-desc">COMP229 - 004 - Professor Blessing Ajiboye</p>
 
-        <%- include('partials/bottom_nav.ejs') %>
+      <div class="button-container d-flex justify-content-center">
+        <a
+          href="/pdf/assignment.pdf"
+          class="button-white button-elevated button-neutral"
+          alt="pdf"
+          target="_blank"
+          >Assignment 1</a
+        >
+        <a
+          class="button-black button-elevated button-neutral"
+          href="mailto:bajiboy1@my.centennialcollege.ca"
+          >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;E-mail&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a
+        >
+      </div>
 
-            <%- include('partials/footer.ejs') %>
+      <div class="overview-comp229 d-flex justify-content-center">
+        <img class="comp229" src="/img/comp229.jpg" alt="COMP229-Logo" />
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="content" role="alert">
+    <div class="d-flex justify-content-center">
+      <h3 class="headline">To-Do List</h3>
+    </div>
+
+    <p class="subhead">
+      "A to-do list guides my procedure for developing a personal portfolio,
+      ensuring every stage from initial design to final deployment is tracked
+      and completed efficiently."
+    </p>
+
+    <p class="head-desc">Name: HOI KIT FAN | ID: 301249275</p>
+
+    <div class="button-container d-flex justify-content-center">
+      <a
+        href="https://www.centennialcollege.ca/"
+        alt="centennial-college"
+        target="_blank"
+        class="button-white button-elevated button-neutral"
+        alt="pdf"
+        >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;College&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a
+      >
+    </div>
+    <div class="container">
+      <ol class="list-group index-list mx-auto">
+        <li class="list-group-item">
+          <input type="checkbox" checked /> Appropriate content for a Personal
+          Portfolio
+        </li>
+        <li class="list-group-item">
+          <input type="checkbox" /> Portfolio site will use ExpressJS and NodeJS
+        </li>
+        <li class="list-group-item">
+          <input type="checkbox" checked /> Site files will be migrated to work
+          within the public, routes and views folders
+        </li>
+        <li class="list-group-item">
+          <input type="checkbox" /> Internal Documentation
+        </li>
+        <li class="list-group-item">
+          <input type="checkbox" checked /> Share my files on Github
+        </li>
+        <li class="list-group-item">
+          <input type="checkbox" /> Create short video on Youtube
+        </li>
+        <li class="list-group-item">
+          <input type="checkbox" checked /> A zip archive of your website’s
+          Project files
+        </li>
+        <li class="list-group-item">
+          <input type="checkbox" /> A link to GitHub (preferable).
+        </li>
+        <li class="list-group-item">
+          <input type="checkbox" checked /> A link to your live portfolio site
+          hosted with a Cloud provider
+        </li>
+      </ol>
+    </div>
+    <div class="overview-comp229 d-flex justify-content-center">
+      <img class="comp229" src="/img/starNight.jpg" alt="COMP229-Logo" />
+    </div>
+  </div>
+</div>
+
+<div class="content-primary">
+  <div class="container">
+    <div class="content" role="alert">
+      <div class="d-flex justify-content-center">
+        <h3 class="headline">Objectives</h3>
+      </div>
+
+      <p class="subhead">
+        "My personal portfolio shows my skills and capabilities. Should there be
+        a fitting job opportunity, don't hesitate to contact me."
+      </p>
+
+      <p class="head-desc">Name: HOI KIT FAN | ID: 301249275</p>
+
+      <div class="button-container d-flex justify-content-center">
+        <a
+          href="mailto:hfan15@my.centennialcollege.ca"
+          class="button-black button-elevated button-neutral"
+          alt="pdf"
+          >Contact Me</a
+        >
+      </div>
+
+      <div class="overview-comp229 d-flex justify-content-center">
+        <img class="comp229" src="/img/comp228.jpg" alt="COMP228-Logo" />
+      </div>
+    </div>
+  </div>
+</div>
+
+<%- include('partials/bottom_nav.ejs') %> <%- include('partials/footer.ejs') %>

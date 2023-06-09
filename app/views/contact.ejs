@@ -1,21 +1,174 @@
-<!DOCTYPE html>
-<html lang="en">
+<%- include('partials/header.ejs') %> <%- include('partials/main_nav.ejs') %>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>
-        <%= title %>
-    </title>
-</head>
+<div class="container">
+  <div class="d-flex justify-content-center">
+    <h3 class="headline"><%=title %> Form</h3>
+  </div>
 
-<body>
-    <h1>
-        <img src="img/pot.jpg" alt="pot">
-        <%=title %>
-    </h1>
+  <div class="contact-info-panel container">
+    <div class="row mb-2 justify-content-center">
+      <div class="col-md-6">
+        <div
+          class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative justify-content-center"
+        >
+          <div class="col p-4 d-flex flex-column position-static text-center">
+            <strong class="d-inline-block mb-2 text-primary-emphasis"
+              >Contact Panel</strong
+            >
+            <h3 class="mb-0">Social Media</h3>
+            <div>Thank you!</div>
+            <div class="row mb-2 justify-content-center">
+              <div class="col-3">
+                <a
+                  class="nav-link"
+                  href="https://wa.me/85255983589?text=Hello%2C%20I%20would%20like%20to%20inquire%20about%20your%20services"
+                  target="_blank"
+                  ><i class="fa-brands fa-whatsapp"></i
+                ></a>
+              </div>
+              <div class="col-3"></div>
+              <div class="col-3"></div>
+              <div class="col-3">
+                <a
+                  class="nav-link"
+                  href="https://m.me/fanik.fan"
+                  target="_blank"
+                >
+                  <i class="fa-brands fa-facebook-messenger"></i
+                ></a>
+              </div>
+            </div>
 
-</body>
+            <div class="row mb-2 justify-content-center">
+              <div class="col-3">
+                <a
+                  class="nav-link"
+                  href="https://www.facebook.com/fanik.fan/"
+                  target="_blank"
+                  ><i class="fa-brands fa-facebook"></i
+                ></a>
+              </div>
+              <div class="col-3"></div>
+              <div class="col-3"></div>
+              <div class="col-3">
+                <a
+                  class="nav-link"
+                  href="mailto:hfan15@my.centennialcollege.ca"
+                  target="_blank"
+                  ><i class="fa-regular fa-envelope"></i
+                ></a>
+              </div>
+            </div>
+            <div class="row mb-2 justify-content-center">
+              <div class="col-3"></div>
+              <div class="col-3">
+                <a
+                  class="nav-link"
+                  href="https://github.com/FanikIsLearning/personal_portfolio"
+                  target="_blank"
+                  ><i class="fa-brands fa-github"></i
+                ></a>
+              </div>
+              <div class="col-3">
+                <a
+                  class="nav-link"
+                  href="https://www.youtube.com/channel/UC5mWPHj1FDgHGqHnVrB-UBg"
+                  target="_blank"
+                  ><i class="fa-brands fa-youtube"></i
+                ></a>
+              </div>
+              <div class="col-3"></div>
+            </div>
+          </div>
+          <div
+            class="col-auto d-none d-lg-block text-center align-items-center"
+          >
+            <svg
+              class="bd-placeholder-img"
+              width="250"
+              height="270"
+              xmlns="http://www.w3.org/2000/svg"
+              role="img"
+              aria-label="Placeholder: Thumbnail"
+              preserveAspectRatio="xMidYMid slice"
+              focusable="false"
+            >
+              <title>Placeholder</title>
+              <rect width="100%" height="100%" fill="#55595c"></rect>
 
-</html>
+              <image
+                xlink:href="/img/about/shiba.JPG"
+                x="0"
+                y="0"
+                height="100%"
+                width="100%"
+                preserveAspectRatio="none"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <form
+    action="/submit-contact-form"
+    method="POST"
+    class="container content-primary"
+  >
+    <div class="form-group">
+      <label for="firstName">First Name:</label>
+      <input
+        type="text"
+        class="form-control u1"
+        id="firstName"
+        name="firstName"
+        required
+      />
+    </div>
+    <div class="form-group">
+      <label for="lastName">Last Name:</label>
+      <input
+        type="text"
+        class="form-control u1"
+        id="lastName"
+        name="lastName"
+        required
+      />
+    </div>
+    <div class="form-group">
+      <label for="contactNumber">Contact Number:</label>
+      <input
+        type="tel"
+        class="form-control u1"
+        id="contactNumber"
+        name="contactNumber"
+        required
+      />
+    </div>
+    <div class="form-group">
+      <label for="email">Email Address:</label>
+      <input
+        type="email"
+        class="form-control u1"
+        id="email"
+        name="email"
+        required
+      />
+    </div>
+    <div class="form-group">
+      <label for="message">Message:</label>
+      <textarea
+        class="form-control u1"
+        id="message"
+        name="message"
+        rows="3"
+        required
+      ></textarea>
+    </div>
+    <hr />
+    <button type="submit" id="submitbtn" class="btn btn-primary">Submit</button>
+  </form>
+</div>
+
+<%- include('partials/bottom_nav.ejs') %> <%- include('partials/footer.ejs') %>
