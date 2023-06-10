@@ -1,3 +1,10 @@
+/*  
+    File Name: server.js
+    Student Name: HOI KIT FAN
+    Student ID: 301249275
+    Date: 05/29/2023
+*/
+
 process.env.NODE_ENV = process.env.NODE_ENV || "development";
 const express = require("./config/express");
 const app = express();
