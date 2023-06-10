@@ -211,6 +211,10 @@
   .index-list {
     width: 695px;
   }
+
+  .responsive-text {
+    display: none;
+  }
 }
 
 @media only screen and (max-width: 734px) {
@@ -221,5 +225,9 @@
 
   .index-list {
     max-width: 100%;
+  }
+
+  .responsive-text {
+    display: none;
   }
 }
