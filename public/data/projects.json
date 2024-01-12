@@ -1,5 +1,21 @@
 [
     {
+        "href": "https://comp231-front-end.onrender.com/",
+        "alt": "Messenger Application with AI bot",
+        "imgSrc": "/img/projects/p11.PNG",
+        "title": "Messenger Application with AI bot",
+        "text": "This web app is only available for use on computer browsers. I am the designer and frontend developer of this website, and I am also responsible for its API.",
+        "fontColor": "font-white"
+    },
+    {
+        "href": "https://main--grocery-fresh.netlify.app/home",
+        "alt": "Grocerry Store - Basic CRUD",
+        "imgSrc": "/img/projects/p10.PNG",
+        "title": "Grocerry Store - Basic CRUD",
+        "text": "I am a full stack developer of this project, with CICD, both frontend, backend and deployment",
+        "fontColor": "font-black"
+    },
+    {
       "href": "http://studentweb.cencol.ca/hfan15/index.html",
       "alt": "COMP213-project1",
       "imgSrc": "/img/projects/p1.png",
