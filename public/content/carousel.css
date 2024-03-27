@@ -1,0 +1,164 @@
+
+/*carousel*/
+.fanik-carousel{
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+    width: 100%;
+    min-height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #080808;
+  }
+
+  .left-arrow{
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    z-index: 100;
+  }
+
+  .right-arrow{
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    z-index: 100;
+  }
+  
+  .indicators button {
+    background: none;
+    border: none;
+    outline: none;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    border: 2px solid black;
+    cursor: pointer;
+    margin-left: 5px;
+    transition: 0.5s;
+    box-sizing: border-box; 
+  }
+  
+  button.active {
+    width: 40px;
+    border-radius: 50px;
+    background: black;
+    box-sizing: border-box;
+  }
+
+  .fanik-container{
+    position: relative;
+    width: 800px;
+    min-width: 350px;
+    min-height: 250px;
+    padding-bottom: 40px;
+    overflow: hidden;
+  }
+
+  .fanik-wrapper{
+    width: 700%;
+    min-height: 100%;
+    display: flex;
+    justify-content: space-between;
+    transition: 1s;
+  }
+  
+  .fanik-card {
+    text-decoration: none;
+    color: #080808;
+    width: 820px;
+    height: 100%;
+    background: lightgrey;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin: 0 10px;
+  }
+  
+  .fanik-card-thumb{
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+    border-radius: 10px;
+    position: relative;
+  }
+
+  .fanik-title{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 5px 20px;
+    background: rgba(
+      0,
+      0,
+      0,
+      0
+    ); /* Slight background to make the text stand out more */
+    color: black;
+    font-weight: bold;
+    text-transform: capitalize;
+    font-size: 21px;
+  }
+
+  .fanik-tag{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    padding: 5px 20px;
+    background: black;
+    color: #fff;
+    text-transform: capitalize;
+    font-size: 14px;
+  }
+
+  .fanik-client-img{
+    width: 100%; height: 100%; object-fit: cover
+  }
+  
+  .fanik-card:hover {
+    background-color: lightgray;
+    color: black;
+    opacity: 0.8;
+  }
+  
+  @media only screen and (max-width: 600px) {
+      .carousel-button { display: none;}
+  
+      .indicators button {
+    height: 1.5rem;
+  }
+  
+      .left-arrow, .right-arrow {
+  display: none;
+  }
+  
+    .fanik-card {
+      width: 50%;
+    }
+  
+    .card-body {
+      width: 50%;
+      min-height: auto;
+      margin-left: 0;
+    }
+  
+    .review {
+      font-size: 10px !important;
+    }
+  }
+  

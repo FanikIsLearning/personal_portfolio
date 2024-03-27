@@ -1,7 +1,5 @@
 /*  File Name: index.server.routes.js
-    Student Name: HOI KIT FAN
-    Student ID: 301249275
-    Date: 06/09/2023
+    HOI KIT FAN
 */
 var express = require("express");
 var router = express.Router();

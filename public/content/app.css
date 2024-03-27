@@ -202,6 +202,7 @@
   transform: translateY(-4px);
   box-shadow: rgba(0, 0, 0, 0.4) 0px 5px 15px 0px !important;
 }
+
 @media only screen and (max-width: 1068px) {
   .comp229 {
     width: 695px;
