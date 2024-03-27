@@ -4,6 +4,7 @@
 var express = require("express");
 var router = express.Router();
 var projectsList = require("../../public/data/projects.json");
+var cardsList = require("../../public/data/cards.json")
 var colors = [
   "primary",
   "secondary",
@@ -16,7 +17,10 @@ var colors = [
 
 /* GET home page. */
 router.get("/", function (req, res, next) {
-  res.render("index", { title: "Home" });
+  res.render("index", { 
+    title: "Home", 
+    cards: cardsList 
+  });
 });
 
 router.get("/about", function (req, res, next) {

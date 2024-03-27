@@ -1,142 +1,25 @@
 <div>
-  <style></style>
   <div class="fanik-carousel">
     <div class="arrow left-arrow">&#10094;</div>
     <div class="arrow right-arrow">&#10095;</div>
-
-    <div
-      class="fanik-container"
-    >
-      <div
-        class="fanik-wrapper"
-      >
-        <a
-          class="fanik-card"
-          href="https://berczyeyecare.mypatientportal.xyz/dashboard"
-          target="_blank"
-        >
-          <div class="fanik-card-thumb">
-            <img
-              src="https://www.berczyeyecare.com/uploads/1/4/0/8/140867789/background-images/217323599.jpg"
-              class="fanik-client-img"
-              alt=""
-            />
-            <span class="fanik-title">The Myopia Clinic ​• Optometry</span>
-            <span class="fanik-tag">BOOK YOUR EYE EXAM ONLINE</span>
-          </div>
-        </a>
-        <a
-          class="fanik-card"
-          href="https://berczyeyecare.ottooptics.io/reorder/"
-          target="_blank"
-        >
-          <div class="fanik-card-thumb">
-            <img
-              src="https://lh5.googleusercontent.com/p/AF1QipMDjjqMwlPPJ6_1SY7X__fAHdj_XgDn6oyddiU=w1200-h1301-p-k-no"
-              class="fanik-client-img"
-              alt=""
-            />
-            <span class="fanik-title"
-              >Our Brand New Online Ordering Platform</span
-            >
-            <span class="fanik-tag">SHOP NOW</span>
-          </div>
-        </a>
-        <a
-          class="fanik-card"
-          href="https://www.berczyeyecare.com/our-team.html"
-          target="_blank"
-        >
-          <div class="fanik-card-thumb">
-            <img
-              src="https://lh5.googleusercontent.com/p/AF1QipNcTXYK23lsiVNuXQMTeKrj2JqeylrDPcSHkwk"
-              class="fanik-client-img"
-              alt=""
-            />
-            <span class="fanik-title"></span>
-            <span class="fanik-tag">Our Team</span>
-          </div>
-        </a>
-        <a
-          class="fanik-card"
-          href="https://wa.me/16479565316?text=Hello%2C%20I%20would%20like%20to%20inquire%20about%20your%20services"
-          target="_blank"
-        >
-          <div class="fanik-card-thumb">
-            <img
-              src="https://www.berczyeyecare.com/uploads/1/4/0/8/140867789/whatsapp_orig.png"
-              class="fanik-client-img"
-              alt=""
-            />
-            <span class="fanik-title"></span>
-            <span class="fanik-tag">Whatsapp Available</span>
-          </div>
-        </a>
-        <a
-          class="fanik-card"
-          href="https://www.google.com/maps/place/Berczy+Eyecare+-+The+Myopia+Clinic+%E2%80%A2+Medical+Optometry+-+Dr.+Rosina+Cheung/@43.8805472,-79.3145896,17z/data=!3m1!4b1!4m6!3m5!1s0x89d4d55bd3463c09:0x6d8913a459339bb1!8m2!3d43.8805472!4d-79.3124009!16s%2Fg%2F11q4ddmnld"
-          target="_blank"
-        >
-          <div class="fanik-card-thumb">
-            <img
-              src="https://lh5.googleusercontent.com/p/AF1QipMOIZrWvosZag2B5iozMjA52tDmv1d2z1qeAN0"
-              class="fanik-client-img"
-              alt=""
-            />
-            <span class="fanik-title"></span>
-            <span class="fanik-tag">Google Map</span>
-          </div>
-        </a>
-        <a
-          class="fanik-card"
-          href="https://berczyeyecare.ottooptics.io/reorder/"
-          target="_blank"
-        >
-          <div class="fanik-card-thumb">
-            <img
-              src="https://lh5.googleusercontent.com/p/AF1QipMDjjqMwlPPJ6_1SY7X__fAHdj_XgDn6oyddiU=w1200-h1301-p-k-no"
-              class="fanik-client-img"
-              alt=""
-            />
-            <span class="fanik-title"
-              >Our Brand New Online Ordering Platform</span
-            >
-            <span class="fanik-tag">SHOP NOW</span>
-          </div>
-        </a>
-        <a
-          class="fanik-card"
-          href="https://www.berczyeyecare.com/our-team.html"
-          target="_blank"
-        >
-          <div class="fanik-card-thumb">
-            <img
-              src="https://lh5.googleusercontent.com/p/AF1QipNcTXYK23lsiVNuXQMTeKrj2JqeylrDPcSHkwk"
-              class="fanik-client-img"
-              alt=""
-            />
-            <span class="fanik-title"></span>
-            <span class="fanik-tag">Our Team</span>
-          </div>
-        </a>
+  
+    <div class="fanik-container">
+      <div class="fanik-wrapper">
+        <% cards.forEach(function(card) { %>
+          <a class="fanik-card" href="<%= card.href %>" target="_blank">
+            <div class="fanik-card-thumb">
+              <img src="<%= card.imgSrc %>" class="fanik-client-img" alt="<%= card.imgAlt %>"/>
+              <span class="fanik-title"><%= card.title %></span>
+              <span class="fanik-tag"><%= card.tag %></span>
+            </div>
+          </a>
+        <% }); %>
       </div>
-      <div
-        class="indicators"
-        style="
-          position: absolute;
-          bottom: 0;
-          left: 50%;
-          transform: translateX(-50%);
-        "
-      >
-        <button class="carousel-button active"></button>
-        <button class="carousel-button"></button>
-        <button class="carousel-button"></button>
-        <button class="carousel-button"></button>
-        <button class="carousel-button"></button>
-        <button class="carousel-button"></button>
-        <button class="carousel-button"></button>
+      <div class="indicators" style="position: absolute; bottom: 0; left: 50%; transform: translateX(-50%);">
+        <% cards.forEach(function(card, index) { %>
+          <button class="carousel-button <%= index === 0 ? 'active' : '' %>"></button>
+        <% }); %>
       </div>
     </div>
-  </div>
+  </div>  
 </div>
