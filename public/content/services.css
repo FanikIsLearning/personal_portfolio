@@ -1,0 +1,53 @@
+/*3d tour*/
+.lang-card{
+    display: flex;
+    justify-content: center;
+}
+
+.lang-card a{
+    margin: 10px;
+}
+
+.card-3dtour1{
+    border: 5px solid rgb(122, 225, 99); /* Thick red border */
+    padding: 25px; /* Space between the border and the content inside the card */
+    margin: 25px; /* Space around the card */
+    border-radius: 20px;
+}
+
+.card-3dtour2{
+    border: 5px solid rgb(99, 187, 225); /* Thick red border */
+    padding: 25px; /* Space between the border and the content inside the card */
+    margin: 25px; /* Space around the card */
+    border-radius: 20px;
+}
+
+.card-3dtour3{
+    border: 5px solid rgb(225, 177, 99); /* Thick red border */
+    padding: 25px; /* Space between the border and the content inside the card */
+    margin: 25px; /* Space around the card */
+    border-radius: 20px;
+}
+
+.card-3dtour3 .card-title {
+    padding-bottom: 30px;
+}
+
+.card-3dtour2 .card-title {
+    padding-bottom: 30px;
+}
+
+.card3d-list li {
+    padding: 10px;
+}
+
+.language { display: none; }
+.language.active { display: block; }
+
+
+@media (max-width: 600px) {
+    .card3d-list li {
+        padding: 5px; /* Smaller padding on smaller screens */
+    }
+}
+

@@ -3,139 +3,187 @@
     HOI KIT FAN
 -->
 <%- include('partials/header.ejs') %> <%- include('partials/main_nav.ejs') %>
-<div class="container">
-  <div class="d-flex justify-content-center">
-    <h3 class="headline"><%=title %></h3>
-  </div>
-  <p class="subhead">
-    "I offer a range of services, including the design and implementation of any
-    component featured on this website."
-  </p>
-  <div class="head-desc">
-    <h1>3D Tour Pricing</h1>
-    <p>Charges for 3D Tour services are as follows:</p>
-    <ul style="list-style-type: none;">
-        <li>Up to 1,500 sq. ft.: $150 + HST</li>
-        <li>1,500 sq. ft. - 3,000 sq. ft.: $180 + HST</li>
-        <li>3,000 sq. ft. - 5,000 sq. ft.: $210 + HST</li>
-        <li>Over 5,000 sq. ft.: Custom quote required</li>
-    </ul>
-    
-    <h2>Additional Charges (if needed) per Month (30 days)</h2>
-    <ul style="list-style-type: none;">
-        <li>Cloud storage fee: $10/month (30 days)</li>
-        <li>Technical support: $30/hour (This fee is usually for special technical requirements by the customer, such as trademark blurring in provided reference/sample projects, which takes about 2 hours for over 100 instances.)</li>
-    </ul>
-    
-    <p>Note: As our service area is in Richmond Hill, we do not charge a transportation fee for nearby locations. However, an additional fee will be applied for distant locations.</p>  
-  </div>
-  <div class="head-desc">
-    <h1>3D 虛擬導覽定價</h1>
-    <p>3D 虛擬導覽服務的收費如下：</p>
-    <ul style="list-style-type: none;">
-        <li>1,500 平方英尺或以下：$150 + HST</li>
-        <li>1,500 平方英尺 - 3,000 平方英尺：$180 + HST</li>
-        <li>3,000 平方英尺 - 5,000 平方英尺：$210 + HST</li>
-        <li>超過 5,000 平方英尺：需另行報價</li>
-    </ul>
-    
-    <h2>額外收費（如有需要）每月（30天）</h2>
-    <ul style="list-style-type: none;">
-        <li>雲端儲存費：$10/月（30天）</li>
-        <li>技術支持：$30/小時（此費用通常為客戶特別技術要求，如提供的參考/樣品項目中商標模糊化合共100多處用時2小時）</li>
-    </ul>
-    
-    <p>注意：由於我們的服務範圍在 Richmond Hill，對於附近地區我們不收取交通費。然而，對於較遠的地點將會收取額外費用。</p>  
-</div>
-
-
-
-  <p class="head-desc">
-    If you require a 3D scan of your location, please do not hesitate to
-    contact me. I offer related services.
-  </p>
-
-
-  <div class="d-flex justify-content-center">
-    <iframe
-      width="853"
-      height="480"
-      src="https://my.matterport.com/show/?m=2U7TKTPrny1"
-      frameborder="0"
-      allowfullscreen
-      allow="xr-spatial-tracking"
-    ></iframe>
-  </div>
-  <div class="container">
-    <div class="row">
-      <div class="col-md-3 col-sm-12">
-        <div class="d-flex justify-content-center">
-          <i class="fa-solid fa-c padded-icon"> #</i>
-        </div>
+    <div class="container">
+      <div class="d-flex justify-content-center">
+        <h3 class="headline">
+          <%=title %>
+        </h3>
       </div>
-      <div class="col-md-3 col-sm-12">
-        <div class="d-flex justify-content-center">
-          <i class="fa-brands fa-java padded-icon"> JAVA</i>
-        </div>
+      <p class="subhead">
+        "I offer a range of services, including the design and implementation of any
+        component featured on this website."
+      </p>
+      <div class="lang-card">
+        <a href="#" class="btn btn-primary" onclick="switchLanguage('en'); return false;">English</a>
+        <a href="#" class="btn btn-warning" onclick="switchLanguage('cn'); return false;">中文</a>
       </div>
-      <div class="col-md-3 col-sm-12">
-        <div class="d-flex justify-content-center">
-          <i class="fa-brands fa-square-js padded-icon"> JS</i>
+      <hr>
+      <div class="head-desc language en active">
+
+        <div class="card-3dtour3">
+          <div class="card-body">
+            <h1 class="card-title">3D Virtual Tour Pricing and Process</h1>
+            <p class="card-text">Process 1: After onsite photography, two models are provided for selection along with
+              photos.</p>
+            <p class="card-text">Process 2: After obtaining the models and photos, further modifications are required.
+            </p>
+          </div>
         </div>
+
+
+        <div class="card-3dtour2">
+          <div class="card-body">
+
+            <h3 class="card-title">Pricing for Process 1 is as follows:</h3>
+            <ul class="card3d-list" style="list-style-type: none;">
+              <li>Up to 1,500 sq. ft.: $150 + HST</li>
+              <li>1,500 sq. ft. - 3,000 sq. ft.: $180 + HST</li>
+              <li>3,000 sq. ft. - 5,000 sq. ft.: $210 + HST</li>
+              <li>Over 5,000 sq. ft.: Custom quote required</li>
+            </ul>
+          </div>
+        </div>
+
+
+
+        <div class="card-3dtour2">
+          <div class="card-body">
+            <h3 class="card-title">Pricing for Process 2 is as follows:</h3>
+            <ul class="card3d-list" style="text-align: left;">
+              <li>Cloud storage fee: $10/month (30 days)</li>
+              <li>Technical support: $30/hour (This fee is usually for special technical requirements by the customer,
+                such
+                as trademark blurring in provided reference/sample projects, which takes about 2 hours for over 100
+                instances.)</li>
+            </ul>
+            <p>Note: As our service area is in Richmond Hill, we do not charge a
+              transportation fee for nearby
+              locations.
+              However, an additional fee will be applied for distant locations.</p>
+          </div>
+        </div>
+        <hr>
       </div>
-      <div class="col-md-3 col-sm-12">
-        <div class="d-flex justify-content-center">
-          <i class="fa-brands fa-html5 padded-icon"> HTML5</i>
+
+      <div class="head-desc language cn">
+
+        <div class="card-3dtour3">
+          <div class="card-body">
+            <h1 class="card-title">3D 虛擬導覽定價與流程</h1>
+            <p>流程1: 上門拍攝後提供兩個模型後供選擇及相片</p>
+            <p>流程2: 獲取模型及相片後需進一步更改</p>
+          </div>
+        </div>
+
+
+        <div class="card-3dtour2">
+          <div class="card-body">
+            <h3 class="card-title">流程1收費如下：</h3>
+            <ul class="card3d-list" style="list-style-type: none;">
+              <li>1,500 平方英尺或以下：$150 + HST</li>
+              <li>1,500 平方英尺 - 3,000 平方英尺：$180 + HST</li>
+              <li>3,000 平方英尺 - 5,000 平方英尺：$210 + HST</li>
+              <li>超過 5,000 平方英尺：需另行報價</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="card-3dtour2">
+          <div class="card-body">
+            <h3 class="card-title">流程2收費如下:</h3>
+            <ul class="card3d-list" style="text-align: left;">
+              <li>雲端儲存費：$10/月（30天）</li>
+              <li>技術支持：$30/小時（此費用通常為客戶特別技術要求，如提供的參考/樣品項目中商標模糊化合共100多處用時2小時）</li>
+            </ul>
+
+            <p>注意：由於我們的服務範圍在 Richmond Hill，對於附近地區我們不收取交通費。然而，對於較遠的地點將會收取額外費用。</p>
+          </div>
+
+        </div>
+        <hr>
+      </div>
+
+
+
+      <p class=" head-desc">
+        If you require a 3D scan of your location, please do not hesitate to
+        contact me. I offer related services.
+      </p>
+
+
+      <div class="d-flex justify-content-center">
+        <iframe width="853" height="480" src="https://my.matterport.com/show/?m=2U7TKTPrny1" frameborder="0"
+          allowfullscreen allow="xr-spatial-tracking"></iframe>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 col-sm-12">
+            <div class="d-flex justify-content-center">
+              <i class="fa-solid fa-c padded-icon"> #</i>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-12">
+            <div class="d-flex justify-content-center">
+              <i class="fa-brands fa-java padded-icon"> JAVA</i>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-12">
+            <div class="d-flex justify-content-center">
+              <i class="fa-brands fa-square-js padded-icon"> JS</i>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-12">
+            <div class="d-flex justify-content-center">
+              <i class="fa-brands fa-html5 padded-icon"> HTML5</i>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-3 col-sm-12">
+            <div class="d-flex justify-content-center">
+              <i class="fa-brands fa-ubuntu padded-icon"></i>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-12">
+            <div class="d-flex justify-content-center">
+              <i class="fa-brands fa-weebly padded-icon"></i>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-12">
+            <div class="d-flex justify-content-center">
+              <i class="fa-brands fa-vuejs padded-icon"></i>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-12">
+            <div class="d-flex justify-content-center">
+              <i class="fa-brands fa-git padded-icon">
+                <i class="fa-solid fa-code-pull-request"></i></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6 col-sm-12">
+            <div class="d-flex justify-content-center">
+              <i class="fa-solid fa-cube padded-icon"> BLENDER</i>
+            </div>
+          </div>
+          <div class="col-md-6 col-sm-12">
+            <div class="d-flex justify-content-center">
+              <i class="fa-solid fa-palette padded-icon"> PHOTOSHOP</i>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-12 col-sm-12">
+            <div class="d-flex justify-content-center">
+              <i class="fa-solid fa-vr-cardboard padded-icon"> MATTERPORT</i>
+            </div>
+          </div>
         </div>
       </div>
     </div>
 
-    <div class="row">
-      <div class="col-md-3 col-sm-12">
-        <div class="d-flex justify-content-center">
-          <i class="fa-brands fa-ubuntu padded-icon"></i>
-        </div>
-      </div>
-      <div class="col-md-3 col-sm-12">
-        <div class="d-flex justify-content-center">
-          <i class="fa-brands fa-weebly padded-icon"></i>
-        </div>
-      </div>
-      <div class="col-md-3 col-sm-12">
-        <div class="d-flex justify-content-center">
-          <i class="fa-brands fa-vuejs padded-icon"></i>
-        </div>
-      </div>
-      <div class="col-md-3 col-sm-12">
-        <div class="d-flex justify-content-center">
-          <i class="fa-brands fa-git padded-icon">
-            <i class="fa-solid fa-code-pull-request"></i
-          ></i>
-        </div>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col-md-6 col-sm-12">
-        <div class="d-flex justify-content-center">
-          <i class="fa-solid fa-cube padded-icon"> BLENDER</i>
-        </div>
-      </div>
-      <div class="col-md-6 col-sm-12">
-        <div class="d-flex justify-content-center">
-          <i class="fa-solid fa-palette padded-icon"> PHOTOSHOP</i>
-        </div>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col-md-12 col-sm-12">
-        <div class="d-flex justify-content-center">
-          <i class="fa-solid fa-vr-cardboard padded-icon"> MATTERPORT</i>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<%- include('partials/bottom_nav.ejs') %> <%- include('partials/footer.ejs') %>
+    <%- include('partials/bottom_nav.ejs') %> <%- include('partials/footer.ejs') %>
