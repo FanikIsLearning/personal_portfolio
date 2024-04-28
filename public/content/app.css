@@ -203,6 +203,10 @@
   box-shadow: rgba(0, 0, 0, 0.4) 0px 5px 15px 0px !important;
 }
 
+.span {   
+  height: 50px;     /* Specifies the height of the div */
+}
+
 @media only screen and (max-width: 1068px) {
   .comp229 {
     width: 695px;
@@ -231,5 +235,9 @@
 
   .responsive-text {
     display: none;
+  }
+
+  .span {   
+    height: 10px;     /* Specifies the height of the div */
   }
 }

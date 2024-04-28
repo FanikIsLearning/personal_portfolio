@@ -2,25 +2,19 @@
     Filename: index.ejs
 -->
 <%- include('partials/header.ejs') %> <%- include('partials/main_nav.ejs') %>
-<div class="d-flex justify-content-center">
-  <h3 class="headline">Welcome to <%=title %></h3>
-</div>
-<%- include('partials/carousel.ejs') %>
-<div style="width: 100%; height: 550px">
-  <a-scene embedded device-orientation-permission-ui="enabled: false">
-    <a-camera position="0 0 3" user-height="0"></a-camera>
-    <a-entity
-      geometry="primitive: sphere; radius: 1.5; segmentsHeight: 53"
-      material="src: /img/earth_texture.jpg"
-      animation="property: rotation; to: 0 360 0; loop: true; dur: 86400; easing: linear"
-    >
-    </a-entity>
-    <a-sky
-      segments-height="100"
-      segments-width="100"
-      src="/img/starNight.jpg"
-      rotation="0 -30 0"
-    ></a-sky>
-  </a-scene>
-</div>
-<%- include('partials/bottom_nav.ejs') %> <%- include('partials/footer.ejs') %>
+    <div class="d-flex justify-content-center">
+      <h3 class="headline">Welcome to <%=title %>
+      </h3>
+    </div>
+    <%- include('partials/carousel.ejs') %>
+      <div style="width: 100%; height: 550px">
+        <a-scene embedded device-orientation-permission-ui="enabled: false">
+          <a-camera position="0 0 3" user-height="0"></a-camera>
+          <a-entity geometry="primitive: sphere; radius: 1.5; segmentsHeight: 53" material="src: /img/earth_texture.jpg"
+            animation="property: rotation; to: 0 360 0; loop: true; dur: 86400; easing: linear">
+          </a-entity>
+          <a-sky segments-height="100" segments-width="100" src="/img/starNight.jpg" rotation="0 -30 0"></a-sky>
+        </a-scene>
+      </div>
+      <div class="span"></div>
+      <%- include('partials/bottom_nav.ejs') %> <%- include('partials/footer.ejs') %>
